@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 5) do
+ActiveRecord::Schema.define(version: 6) do
 
   create_table "beers", force: :cascade do |t|
     t.string  "name"
@@ -39,6 +39,16 @@ ActiveRecord::Schema.define(version: 5) do
   create_table "votes", force: :cascade do |t|
     t.integer "user_id"
     t.integer "beer_id"
+  end
+
+  create_table "whiskeys", force: :cascade do |t|
+    t.string  "name"
+    t.string  "image_url"
+    t.string  "category"
+    t.string  "distiller"
+    t.string  "country"
+    t.string  "abv"
+    t.integer "user_id"
   end
 
 end
