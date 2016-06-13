@@ -1,0 +1,9 @@
+<form method="POST" action="/comments">
+  <label for="remarks">Add Comment</label>
+  <input type="text" name="remarks">
+
+  <input type="hidden" name="beer_id"
+  value="<%= @beer.id %>">
+
+  <button type="submit">Submit</button>
+</form>

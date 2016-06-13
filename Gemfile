@@ -21,5 +21,5 @@ end
 # bundle install --without test --without development
 group :production do
   # use postgres in production, or move outside a group if your app uses postgres for development and production 
-  gem 'pg'
+  # gem 'pg'
 end

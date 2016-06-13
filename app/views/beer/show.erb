@@ -1,0 +1,20 @@
+<div>
+    <ul>
+      <li> Name: <%= @beer.name %></li>
+      <li> Category: <%= @beer.category %></li>
+      <li> Brewer: <%= @beer.brewer %></li>
+      <li> Country: <%= @beer.country %></li>
+      <li> ABV: <%= @beer.abv %></li>
+    </ul>
+    <img src="<%= @beer.image_url%>" alt="Picture of beer">
+</div>
+<div>
+  <ul>
+    <% @beer.comments.each do |comment| %>
+      <li> <%= comment.remarks %></li>
+    <% end %>
+  </ul>
+</div>
+<div>
+  <%= erb :"comment/_new" %>
+</div>
