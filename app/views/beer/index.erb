@@ -1,9 +1,12 @@
 <ul>
   <% @beers.each do |beer| %>
-    <li>
-      <a href="/beers/<%= beer.id %>">
-        <%= beer.name %>
-      </a>
-    </li>
+
+    <div class="booze">
+      <li>
+        <a href="/beers/<%= beer.id %>">
+          <%= beer.name %>
+        </a>
+      </li>
+    </div>
   <% end %>
 </ul>

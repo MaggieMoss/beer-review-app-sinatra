@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('.booze').click(function(){
+    $(this).html("I was clicked");
+  })
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
 });
