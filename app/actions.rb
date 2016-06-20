@@ -41,6 +41,10 @@ get '/beers' do
   erb :"beer/index"
 end
 
+get '/whiskeys' do
+  "Whiskey Page"
+end
+
 before '/beers/:id' do
   redirect '/login' unless logged_in?
 end
