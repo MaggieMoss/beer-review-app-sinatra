@@ -11,4 +11,4 @@ Brought to you by Lighthouse Labs
 
 
 =============
-Demo app created in class by the May Cohort - Intro to Web Dev Course. 
+Demo app created during lecture for the May Cohort - Intro to Web Dev Course. 
