@@ -10,7 +10,7 @@
   <!--
     application.css is where you put your styles
   -->
-  <link rel="stylesheet" href="/stylesheets/application.css">
+  <link rel="stylesheet" href="/stylesheets/simple-grid.css">
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="/javascript/application.js"></script>
@@ -18,7 +18,15 @@
   <title>Beer Reviews</title>
 </head>
 <body>
-  <%= yield %>
+  <% if logged_in? %>
+    <p> Hello, <%= current_user.email %></p>
+    <button>Logout</button>
+  <% else %>
+    <button>Login</button>
+  <% end %>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>
 

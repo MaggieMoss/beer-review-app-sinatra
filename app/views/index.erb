@@ -1,1 +1,9 @@
-<h1>Home Page</h1>
+<ul>
+  <% @beers.each do |beer| %>
+   <li><strong>Brewer: </strong><%= beer.brewer %></li>
+   <li><strong>Name:</strong> <%= beer.name %></li>
+   <li><strong>Type:</strong> <%= beer.beer_type %></li>
+   <li><strong>Country:</strong> <%= beer.country %></li>
+    <br>
+  <% end %>
+</ul>

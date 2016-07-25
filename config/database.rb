@@ -2,7 +2,7 @@ configure do
      if Sinatra::Application.development?
       set :database, {
       adapter: "sqlite3",
-      database: "db/db.sqlite"
+      database: "db/development.sqlite3"
       }
     else
       db = URI.parse(ENV['DATABASE_URL'] || 'postgres://hiomxyxwoawmuy:jjqiXCQrb6SaN_gYREa5R44ruU@ec2-54-83-22-233.compute-1.amazonaws.com:5432/d8pa4vperieole')

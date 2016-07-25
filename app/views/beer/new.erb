@@ -1,0 +1,5 @@
+<h1>Add a Beer</h1>
+<p><%= @beer.errors.full_messages %></p>
+<form action="/beers" method="POST">
+  <%= erb :'/beer/beer_form' %>
+</form>
